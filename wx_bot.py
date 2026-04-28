@@ -1,3 +1,4 @@
+import bottle
 from bottle import route, run, request
 import requests
 import json
@@ -6,6 +7,7 @@ import hashlib
 import os
 
 # ✍️ 在这里填上你的配置（只改等号右边引号里的内容）
+app = bottle.default_app()
 WECHAT_TOKEN = "myEcho"
 DEEPSEEK_KEY = "sk-dd1e33dda2aa443eaf3236039e9c27f8"
 

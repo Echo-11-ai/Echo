@@ -1,14 +1,12 @@
 {
   "builds": [
     {
-      "src": "wx_bot.py",
-      "use": "@vercel/python"
+      "src": "app.py",
+      "use": "@vercel/python",
+      "config": { "runtime": "python3.12" }
     }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/wx_bot.py"
-    }
+    { "src": "/(.*)", "dest": "app.py" }
   ]
 }

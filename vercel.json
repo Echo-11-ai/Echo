@@ -8,7 +8,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "wx_bot.py"
+      "dest": "/wx_bot.py"
     }
   ]
 }

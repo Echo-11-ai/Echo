@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "wx_bot.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "wx_bot.py"
+    }
+  ]
+}

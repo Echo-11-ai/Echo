@@ -83,6 +83,8 @@ def wechat():
             return reply_xml
         else:
             return "success"
+
+app = bottle.default_app()
+
 if __name__ == "__main__":
-    print("🚀 微信机器人正在启动，请保持该窗口运行...")
-    run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), debug=False)
+    bottle.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), debug=False)
